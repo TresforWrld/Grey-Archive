@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tresfor Wrld | Author</title>
+<title>Grey Archive | Books & Creativity</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
+/* -------------------- Global -------------------- */
 body {
     margin: 0;
     background-color: #111111;
@@ -16,6 +16,12 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------- Header -------------------- */
 header {
     padding: 30px 8%;
     display: flex;
@@ -26,13 +32,13 @@ header {
 
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-size: 30px;
     letter-spacing: 2px;
+    color: #f2f2f2;
 }
 
 nav a {
     color: #cccccc;
-    text-decoration: none;
     margin-left: 25px;
     font-size: 14px;
     transition: 0.3s;
@@ -42,15 +48,17 @@ nav a:hover {
     color: #ffffff;
 }
 
+/* -------------------- Hero -------------------- */
 .hero {
     padding: 100px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero-text {
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .hero-text h1 {
@@ -72,12 +80,14 @@ nav a:hover {
     color: white;
     border: 1px solid #444;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .button:hover {
     background-color: #444;
 }
 
+/* -------------------- Sections -------------------- */
 .section {
     padding: 80px 8%;
 }
@@ -88,6 +98,7 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+/* -------------------- Books Grid -------------------- */
 .books-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -108,6 +119,7 @@ nav a:hover {
 .book-card img {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 4px;
 }
 
 .book-card h3 {
@@ -121,6 +133,7 @@ nav a:hover {
     color: #bbbbbb;
 }
 
+/* -------------------- Footer -------------------- */
 footer {
     padding: 40px 8%;
     text-align: center;
@@ -129,13 +142,23 @@ footer {
     color: #777;
 }
 
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Tresfor Wrld</div>
+    <div class="logo">Grey Archive</div>
     <nav>
         <a href="#">Books</a>
         <a href="#">Poetry</a>
@@ -146,8 +169,8 @@ footer {
 
 <section class="hero">
     <div class="hero-text">
-        <h1>Stories Beyond The Ordinary</h1>
-        <p>Exploring emotion, imagination, and the fragile line between reality and reflection. Welcome to my literary world.</p>
+        <h1>Discover, Read, and Engage</h1>
+        <p>A curated library of stories, poetry, and art — for readers and writers alike. Explore tales that blur reality, imagination, and emotion.</p>
         <a href="#" class="button">Explore Books</a>
     </div>
 </section>
@@ -177,8 +200,17 @@ footer {
     </div>
 </section>
 
+<section class="section">
+    <h2>About Grey Archive</h2>
+    <p style="color:#bbbbbb; line-height:1.7;">
+        Grey Archive is a professional literary platform designed for readers and writers.  
+        Discover stories, save favorites, engage with authors, and explore new voices.  
+        In Phase 1, only curated content from the founder is published, with community contributions opening later.
+    </p>
+</section>
+
 <footer>
-    © 2026 Tresfor Wrld — All Rights Reserved
+    © 2026 Grey Archive — All Rights Reserved
 </footer>
 
 </body>
